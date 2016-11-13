@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+const program = require('commander'),
+      sync = require('../lib/cmds/sync');
+
+program
+    .option('-d, --database <database>', 'sync down the database')
+    .option('-a, --assets <assets>', 'sync down the assets')
+
+console.log('bar');
