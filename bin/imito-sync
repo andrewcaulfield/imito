@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 
-const program = require('commander');
+const program = require('commander'),
+     SyncCommand = require('../lib/cmds/sync');
 
 program
     .arguments('[request]', 'what you wanna sync down')
     .parse(process.argv);
 
-console.log('bar');
+new SyncCommand(program).exec();
