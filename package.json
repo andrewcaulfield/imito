@@ -1,0 +1,11 @@
+{
+  "name": "hic",
+  "version": "0.0.1",
+  "description": "Sync down production databases",
+  "main": "index.js",
+  "author": "Andrew Caulfield",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}
