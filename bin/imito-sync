@@ -1,10 +1,9 @@
 #!/usr/bin/env node
 
 const program = require('commander'),
-      sync = require('../lib/cmds/sync');
 
 program
-    .option('-d, --database <database>', 'sync down the database')
-    .option('-a, --assets <assets>', 'sync down the assets')
+    .arguments('[request]', 'the request to tap')
+    .parse(process.argv);
 
 console.log('bar');
