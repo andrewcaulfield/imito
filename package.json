@@ -21,7 +21,8 @@
     "imito": "./bin/imito"
   },
   "devDependencies": {
+    "execsql": "0.0.3",
     "jest": "^17.0.0",
-    "ssh2": "^0.5.4"
+    "mysqldump": "^1.3.1",
   }
 }
