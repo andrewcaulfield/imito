@@ -4,7 +4,7 @@ const program = require('commander'),
      SyncCommand = require('../lib/cmds/sync');
 
 program
-    .arguments('[request]', 'what you wanna sync down')
+    .arguments('[argument]', 'what you wanna sync down')
     .parse(process.argv);
 
 new SyncCommand(program).exec();
