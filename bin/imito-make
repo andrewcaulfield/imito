@@ -6,4 +6,6 @@ const program = require('commander'),
 program
     .parse(process.argv);
 
-new MakeCommand(program).exec();
+    console.log(new MakeCommand(program).exec());
+
+// new MakeCommand(program).exec();
