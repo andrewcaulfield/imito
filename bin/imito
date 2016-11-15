@@ -5,4 +5,5 @@ const program = require('commander');
 program
     .version('0.0.1')
     .command('sync', 'sync down from production')
+    .command('make', 'creates .env file in your project to use')
     .parse(process.argv);

@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+const program = require('commander'),
+     MakeCommand = require('../lib/cmds/make');
+
+program
+    .parse(process.argv);
+
+new MakeCommand(program).exec();
